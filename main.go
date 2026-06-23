@@ -18,7 +18,10 @@ func calculateCircleArea(d int) (float64, error) {
 	result := float64(d)
 	if d < 0 {
 		result = 0
+	} else {
+		return result, nil
 	}
+
 	return result, invalidRadiusError{}
 
 }
